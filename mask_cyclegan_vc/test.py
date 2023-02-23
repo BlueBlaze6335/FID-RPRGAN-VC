@@ -7,7 +7,7 @@ import torch
 import torch.utils.data as data
 import torchaudio
 
-from mask_cyclegan_vc.model_5 import Generator, Discriminator
+from mask_cyclegan_vc.model import Generator, Discriminator
 from args.args.cycleGAN_test_arg_parser import CycleGANTestArgParser
 from dataset.dataset.vc_dataset import VCDataset
 from mask_cyclegan_vc.utils import decode_melspectrogram
