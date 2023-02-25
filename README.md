@@ -1,2 +1,3 @@
 # FID-RPRGAN-VC
-Code for proposed model
+
+Link to samples - https://sites.google.com/mtech.nitdgp.ac.in/fid-rprganvc/home
