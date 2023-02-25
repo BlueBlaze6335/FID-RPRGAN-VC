@@ -7,15 +7,12 @@ import os
 import pickle
 import numpy as np
 from tqdm import tqdm
-import librosa
 import torch
 import torch.utils.data as data
-import matplotlib.pyplot as plt
 #from librosa.filters import dct
-from mask_cyclegan_vc.model import Generator, Discriminator, Discriminator_I
+from fid_rprgan_vc.model import Generator, Discriminator, Discriminator_I
 from args.args.cycleGAN_train_arg_parser import CycleGANTrainArgParser
 from dataset.dataset.vc_dataset import VCDataset
-from mask_cyclegan_vc.utils import decode_melspectrogram, get_mel_spectrogram_fig
 from logger.logger.train_logger import TrainLogger
 from saver.saver.model_saver import ModelSaver
 from scipy.fft import dct
