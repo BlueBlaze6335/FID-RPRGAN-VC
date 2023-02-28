@@ -34,6 +34,15 @@ More samples - https://sites.google.com/mtech.nitdgp.ac.in/fid-rprganvc/home
 - Python 3
 - CPU or NVIDIA GPU + CUDA CuDNN
 
+## Setup
+
+Clone the repository.
+
+```
+git clone (https://github.com/BlueBlaze6335/FID-RPRGAN-VC)
+cd FID-RPRGAN-VC
+```
+
 ## Data Preprocessing
 
 To expedite training, we preprocess the dataset by converting waveforms to melspectograms, then save the spectrograms as pickle files `<speaker_id>normalized.pickle` and normalization statistics (mean, std) as npz files `<speaker_id>_norm_stats.npz`. We convert waveforms to spectrograms using a [melgan vocoder](https://github.com/descriptinc/melgan-neurips) to ensure that you can decode voice converted spectrograms to waveform and listen to your samples during inference.
